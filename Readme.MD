@@ -57,6 +57,21 @@ Il affiche 20 articles à la fois, et il contient bien les informations demandé
 Afin d'afficher les VDM suivantes, il faut utiliser le paramètre page.
 Exemple : http://www.viedemerde.fr/rss?page=3
 
+Structure d'une VDM dans le flux :
+```
+<entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par vieille peau]]></title>
+        <id>211304</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-ma-niece-m-a-demande-mon-age-je-lui-ai-donc-repondu-que-j-avais-28-ans-elle-s-est_211304.html"/>
+        <published>2017-05-04T20:00:02+02:00</published>
+        <updated>2017-04-28T21:55:38+02:00</updated>
+        <author>
+            <name><![CDATA[vieille peau]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, ma nièce m'a demandé mon âge. Je lui ai donc répondu que j'avais 28 ans. Elle s'est mise à me serrer très fort et m'a dit le plus tristement du monde : "Je ne veux pas que tu ailles au ciel tata !" VDM</p>]]></content>
+    </entry>
+```
+
 ### Exposition d'une API Rest
 On utilisera Spring MVC qui est logique d'utiliser dans une stack Spring gréce é sa bonne intégration avec Spring Boot. 
 On mettra en place un nombre de résultats max retournés (afin d'éviter les problémes de performances si é terme le projet stockait un plus grand nombre de données)
