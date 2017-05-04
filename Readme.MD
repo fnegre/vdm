@@ -19,23 +19,15 @@ Contraintes :
 ## Architecture logicielle et orientation
 
 On utilisera Java 8 avec une stack Spring Boot (derniére release). 
+On initialisera le projet avec Spring Initializr : https://start.spring.io/
 Le build se fera via Maven 3.  
 Les tests se feront avec Junit, Spring Tests, AssertJ et Cucumber
 Le reste est détaillé dans l'implémentation technique des différents besoins techniques ci dessous.
+On utilisera Logback comme librairie de logging
 
 Les variables par défaut pour le fonctionnement du programme pourront étre surchargées.
 
-## Implémentation de la récupération des derniéres VDM
-
-Comme on ne peut pas utiliser l'API Rest, les solutions restantes sont :
-- Parcours des pages web et extraction du contenu page par page
-- Utilisation du flux RSS
-
-La solution Flux rss semble la plus adaptée, car le format a peu de chances de changer, alors que la structure html de la page a de grandes chances d'évoluer. De plus, cela est plus simple et plus léger de parser un flux rss qu'une page html.
-
-On utilisera une librairie de parsing xml, qui permettra de mapper le contenu sur des objets.
-
-## Stockage des données
+## Stockage et interrogation des données
 
 Afin de stocker les données, plusieurs solutions légéres (sans avoir é installer une application tierce) sont :
 - Utilisation d'une base de donnnées embarquées (H2 ?)
@@ -45,11 +37,28 @@ La solution BDD est préférable, car elle permet de faire des requêtes SQL sur
 La solution via json sera complexe à implémenter, et peu performante.
 On utilisera une base H2. On aurait également pu utiliser HSQL ou Derby.
 
-## Exposition d'une API Rest
+Les requêtes vers la BDD se feront via Spring Data, qui est un outil répondant aux besoins (insertions, requêtes paramétrées)
+
+## Implémentation des fonctionnalités 
+
+### Implémentation de la récupération des derniéres VDM
+
+Comme on ne peut pas utiliser l'API Rest, les solutions restantes sont :
+- Parcours des pages web et extraction du contenu page par page
+- Utilisation du flux RSS
+
+La solution Flux rss semble la plus adaptée, car le format a peu de chances de changer, alors que la structure html de la page a de grandes chances d'évoluer. De plus, cela est plus simple et plus léger de parser un flux rss qu'une page html.
+
+On utilisera une librairie de parsing xml, qui permettra de mapper le contenu sur des objets.
+L'url du flux rss est http://www.viedemerde.fr/rss
+Il affiche 20 articles à la fois, afin d'afficher les VDM suivantes, il faut utiliser le paramètre page.
+Exemple : http://www.viedemerde.fr/rss?page=3
+
+### Exposition d'une API Rest
 On utilisera Spring MVC qui est logique d'utiliser dans une stack Spring gréce é sa bonne intégration avec Spring Boot. 
 On mettra en place un nombre de résultats max retournés (afin d'éviter les problémes de performances si é terme le projet stockait un plus grand nombre de données)
 
-## Récupération des données depuis le repository
+### Récupération des données depuis le repository
 
 
 
