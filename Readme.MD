@@ -19,8 +19,10 @@ Contraintes :
 ## Architecture logicielle et orientation
 
 On utilisera Java 8 avec une stack Spring Boot (derniére release). 
+Cela permet un développement rapide grâce à son principe de configuration par convention.
 On initialisera le projet avec Spring Initializr : https://start.spring.io/
 Le build se fera via Maven 3.  
+On utilisera le serveur Tomcat embarqué.
 Les tests se feront avec Junit, Spring Tests, AssertJ et Cucumber
 Le reste est détaillé dans l'implémentation technique des différents besoins techniques ci dessous.
 On utilisera Logback comme librairie de logging
@@ -51,7 +53,8 @@ La solution Flux rss semble la plus adaptée, car le format a peu de chances de 
 
 On utilisera une librairie de parsing xml, qui permettra de mapper le contenu sur des objets.
 L'url du flux rss est http://www.viedemerde.fr/rss
-Il affiche 20 articles à la fois, afin d'afficher les VDM suivantes, il faut utiliser le paramètre page.
+Il affiche 20 articles à la fois, et il contient bien les informations demandées. 
+Afin d'afficher les VDM suivantes, il faut utiliser le paramètre page.
 Exemple : http://www.viedemerde.fr/rss?page=3
 
 ### Exposition d'une API Rest
