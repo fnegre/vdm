@@ -1,8 +1,8 @@
-package fr.fnegre.interfaces.rest.request;
+package fr.fnegre.interfaces.rest.reading;
 
 import java.util.Date;
 
-public class VDMRequest {
+public class VdmView {
     private int vdmId;
     private String author;
     private Date publishingDate;
