@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~files/atom-premium.xsl"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:feedpress="https://feed.press/xmlns">
+    <feedpress:locale>fr_FR</feedpress:locale>
+    <title>Vie de merde</title>
+    <subtitle>VDM - VieDeMerde : Prenez la vie côté humour en partageant vos petits malheurs et drôles d&#039;histoires de la vie quotidienne, car ça fait du bien d&#039;en rire.</subtitle>
+    <id>http://www.viedemerde.fr</id>
+    <author>
+        <name>Vie de merde</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://www.viedemerde.fr"/>
+    <link rel="self" href="http://www.viedemerde.fr/rss"/>
+    <updated>2017-05-07T09:51:02+02:00</updated>
+
+
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par ToiTuVasÊtreViré]]></title>
+        <id>211524</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-premier-jour-dans-la-boite-de-mes-reves-leader-mondial-du-secteur-et-je-croise-la-c_211524.html"/>
+        <published>2017-05-07T08:00:02+02:00</published>
+        <updated>2017-04-30T00:21:10+02:00</updated>
+        <author>
+            <name><![CDATA[ToiTuVasÊtreViré]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, premier jour dans la boîte de mes rêves, leader mondial du secteur et je  croise la charmante jeune femme qui m'a dragué hier en boîte. C'est la femme de mon chef. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Jarod]]></title>
+        <id>211509</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-repas-de-famille-la-copine-de-mon-pere-me-demande-mes-dispo-pour-un-prochain-repas-pou_211509.html"/>
+        <published>2017-05-07T06:00:02+02:00</published>
+        <updated>2017-04-29T23:23:48+02:00</updated>
+        <author>
+            <name><![CDATA[Jarod]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, repas de "famille". La copine de mon père me demande mes dispos pour un prochain repas pour fêter la fête des mères... La mienne est morte il y a 5 ans et je n'ai pas d'enfant. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Vanessa]]></title>
+        <id>211494</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-je-demande-a-ma-belle-fille-10-ans-d-essuyer-le-dessous-de-son-verre-pour-ne-pas-mett_211494.html"/>
+        <published>2017-05-06T22:00:02+02:00</published>
+        <updated>2017-04-29T22:35:41+02:00</updated>
+        <author>
+            <name><![CDATA[Vanessa]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, je demande à ma belle-fille de 10 ans, d'essuyer le dessous de son verre pour ne pas mettre de goutte d'eau par terre. Elle le retourne pour vérifier s'il y en a bien. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Anonyme]]></title>
+        <id>211487</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-secretaire-medicale-dans-une-clinique-je-vois-une-consoeur-et-tres-bonne-amie-sorti_211487.html"/>
+        <published>2017-05-06T20:00:02+02:00</published>
+        <updated>2017-04-29T21:33:51+02:00</updated>
+        <author>
+            <name><![CDATA[Anonyme]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, secrétaire médicale dans une clinique, je vois une consoeur et très bonne amie sortir du cabinet de proctologie en boîtant un peu. Pour rigoler, je lui demande : "Crise d'hémorroïdes ?" Elle me répond : "Non ! Sodomie du patron !"  VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Lewis(abelle a les yeux bleus)]]></title>
+        <id>212687</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/le-jt-vdm-2_212687.html"/>
+        <published>2017-05-06T19:00:00+02:00</published>
+        <updated>2017-05-04T17:25:36+02:00</updated>
+        <author>
+            <name><![CDATA[Lewis(abelle a les yeux bleus)]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Carole Teigna et Stéphane Gifard reviennent avec vous sur les actualités VDM du 1er mai, un numéro spécial qui fait toujours plus plaisir qu'un brin de muguet acheté à la hâte et sans conviction !
+L'humour n'est jamais férié, l'info non plus !</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Snark]]></title>
+        <id>211486</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-il-pleut-dans-mon-appartement-probablement-une-fuite-chez-mon-voisin-du-dessus-ca-se_211486.html"/>
+        <published>2017-05-06T18:00:02+02:00</published>
+        <updated>2017-04-29T21:31:47+02:00</updated>
+        <author>
+            <name><![CDATA[Snark]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, il pleut dans mon appartement. Probablement une fuite chez mon voisin du dessus. Ce serait vite réglé s'il n'était pas parti en vacances pour deux semaines. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par balmydelrey]]></title>
+        <id>211459</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-faisant-ma-journee-d-appel-je-donne-ma-convocation-au-lieutenant-voyant-qu-il-me-ten_211459.html"/>
+        <published>2017-05-06T16:00:02+02:00</published>
+        <updated>2017-04-29T19:06:11+02:00</updated>
+        <author>
+            <name><![CDATA[balmydelrey]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, faisant ma journée d'appel, je donne ma convocation au lieutenant. Voyant qu'il me tend la main, je la lui serre. En fait, il voulait ma carte d'identité. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Gayelle]]></title>
+        <id>211456</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-alors-que-nous-sommes-a-table-mon-fils-de-6-ans-me-complimente-sur-mon-plat-fiere_211456.html"/>
+        <published>2017-05-06T14:00:02+02:00</published>
+        <updated>2017-04-29T18:51:28+02:00</updated>
+        <author>
+            <name><![CDATA[Gayelle]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, alors que nous sommes à table, mon fils de 6 ans me complimente sur mon plat. Fière, je lui réponds que mon secret est de l'avoir préparé avec amour. Sa réponse : "Ah ben c'est bien la première fois." VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Anonyme]]></title>
+        <id>210954</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-a-l-eglise-quelques-pieces-de-monnaies-sont-tombees-de-ma-poche-quand-j-essa_210954.html"/>
+        <published>2017-05-06T14:00:00+02:00</published>
+        <updated>2017-04-27T12:48:33+02:00</updated>
+        <author>
+            <name><![CDATA[Anonyme]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd’hui, à l’église, quelques pièces de monnaies sont tombées de ma poche quand j’essayais d’en sortir mon téléphone. Une dame les regarda, me regarda, les ramassa et les garda. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par pam1.02]]></title>
+        <id>211450</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-j-ai-accouche-sans-la-presence-de-mon-copain-qui-a-prefere-le-buffet-asiatique-du_211450.html"/>
+        <published>2017-05-06T12:00:01+02:00</published>
+        <updated>2017-04-29T18:07:17+02:00</updated>
+        <author>
+            <name><![CDATA[pam1.02]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, j'ai accouché sans la présence de mon copain, qui a préféré le buffet asiatique du restaurant d'à côté. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Lewis(est mieux que les &quot;non&quot;)]]></title>
+        <id>212683</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/le-jt-vdm-1_212683.html"/>
+        <published>2017-05-06T12:00:00+02:00</published>
+        <updated>2017-05-04T17:07:01+02:00</updated>
+        <author>
+            <name><![CDATA[Lewis(est mieux que les &quot;non&quot;)]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>VDM vous présente son journal télévisé :
+Carole Teigna et Stéphane Gifard, nos présentateurs vedettes, vous tiennent au courant des actualités du moment... à la sauce VDM bien sûr !
+L'info qui fait rire c'est ici !</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par wondercat]]></title>
+        <id>211426</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-pesee-chez-le-medecin-je-lui-demande-quel-est-le-dernier-poids-qu-il-a-note-il-me_211426.html"/>
+        <published>2017-05-06T10:00:02+02:00</published>
+        <updated>2017-04-29T15:14:14+02:00</updated>
+        <author>
+            <name><![CDATA[wondercat]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, pesée chez le médecin. Je lui demande quel est le dernier poids qu'il a noté. Il me répond qu'il avait dû faire une erreur car il avait noté 56 kg au lieu de 66. Je lui fais remarquer que non, j'ai bien pris plus de 10 kilos, en à peu près 6 mois. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par public.fr]]></title>
+        <id>213050</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/la-vdm-people-triste-annversaire_213050.html"/>
+        <published>2017-05-06T09:50:02+02:00</published>
+        <updated>2017-05-06T09:50:02+02:00</updated>
+        <author>
+            <name><![CDATA[public.fr]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, j'ai appris une mauvaise nouvelle. Mon mari Matthew Kaplan a lancé une procédure de divorce, un an jour pour jour après m'avoir dit "oui" devant l'autel. Désormais il me reste plus qu'à récupérer mon nom de jeune fille. Je suis... Claire Holt ! VDM . JB</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Tampax]]></title>
+        <id>211400</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-en-faisant-mon-shopping-j-ai-voulu-entrer-dans-une-cabine-d-essayage-qui-etait-entro_211400.html"/>
+        <published>2017-05-06T08:00:02+02:00</published>
+        <updated>2017-04-29T11:52:40+02:00</updated>
+        <author>
+            <name><![CDATA[Tampax]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, en faisant mon shopping, j'ai voulu entrer dans une cabine d'essayage qui était entrouverte, pensant qu'elle était libre. Je suis tombée, non pas sur une femme qui essayait un vêtement, mais sur une femme qui changeait son tampon usagé. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par nook41]]></title>
+        <id>211396</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-apres-un-degat-des-eaux-de-la-voisine-du-dessus-un-expert-est-passe-et-n-a-rien-con_211396.html"/>
+        <published>2017-05-06T06:00:02+02:00</published>
+        <updated>2017-04-29T11:30:39+02:00</updated>
+        <author>
+            <name><![CDATA[nook41]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, après un dégât des eaux de la voisine du dessus un expert est passé et n'a rien constaté. Des ouvriers sont venus pour réparer chez elle mais sont passés à travers le plancher. Maintenant, mon plafond à un gros trou et je peux voir mes voisins du dessus à travers. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Damn !]]></title>
+        <id>211390</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-en-tant-que-chef-de-projet-je-n-ai-pas-convie-toute-l-equipe-a-une-reunion-longue_211390.html"/>
+        <published>2017-05-05T22:00:02+02:00</published>
+        <updated>2017-04-29T10:30:08+02:00</updated>
+        <author>
+            <name><![CDATA[Damn !]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, en tant que chef de projet, je n'ai pas convié toute l'équipe à une réunion longue, chiante et inutile, qu'on m'avait imposé. Je me suis donc faite agonir d'injures pour les avoir honteusement écartés du projet. VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Smalldick]]></title>
+        <id>211383</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-alors-que-je-m-appretais-a-faire-l-amour-pour-la-premiere-fois-avec-ma-copine-cel_211383.html"/>
+        <published>2017-05-05T20:00:02+02:00</published>
+        <updated>2017-04-29T09:49:18+02:00</updated>
+        <author>
+            <name><![CDATA[Smalldick]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, alors que je m’apprêtais à faire l'amour pour la première fois avec ma copine, celle-ci a déclaré d'un air déçu en voyant mon engin : "En fait, c'est pas toujours vrai ce qu'on dit sur les noirs." VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par bonjour]]></title>
+        <id>211378</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-je-vais-rencontrer-les-amis-de-mon-copain-pour-la-premiere-fois-dans-sa-region-natale_211378.html"/>
+        <published>2017-05-05T18:00:02+02:00</published>
+        <updated>2017-04-29T09:29:57+02:00</updated>
+        <author>
+            <name><![CDATA[bonjour]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, je vais rencontrer les amis de mon copain pour la première fois dans sa région natale. Un de ses amis me récupère à la gare pour éviter un aller-retour inutile entre la ville et son petit village. Après les présentations, celui-ci m'a demandé : "Tu sais où ça se jette un agneau mort ?" VDM</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par Lewis (zit&#039; me you are looking for ?)]]></title>
+        <id>212892</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/devinez-la-vdm-7_212892.html"/>
+        <published>2017-05-05T17:05:00+02:00</published>
+        <updated>2017-05-05T17:06:34+02:00</updated>
+        <author>
+            <name><![CDATA[Lewis (zit&#039; me you are looking for ?)]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>On est vendredi ! Presque en week-end, mais plus important encore : c'est le jour du devinez la suite !
+Saurez-vous anticiper ce qui se passe dans la vidéo du jour ? On vous propose quelques idées...</p>]]></content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom">
+        <title type="html"><![CDATA[Par secrétairejuridique]]></title>
+        <id>211375</id>
+        <link rel="alternate" href="http://www.viedemerde.fr/article/aujourd-hui-je-travaille-depuis-peu-au-sein-du-departement-juridique-de-mon-entreprise-un-membre_211375.html"/>
+        <published>2017-05-05T16:00:02+02:00</published>
+        <updated>2017-04-29T09:11:15+02:00</updated>
+        <author>
+            <name><![CDATA[secrétairejuridique]]></name>
+        </author>
+        <content type="html"><![CDATA[<p>Aujourd'hui, je travaille depuis peu au sein du département juridique de mon entreprise. Un membre du service du personnel vient me demander s'il y a des "beaux types" dans le département. Surprise, je lui réponds : "Non, mais après tout, chacun ses goûts". En fait, il cherchait des "baux types". VDM</p>]]></content>
+    </entry>
+</feed>
+
