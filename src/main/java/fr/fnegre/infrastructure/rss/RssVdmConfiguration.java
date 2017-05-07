@@ -1,7 +1,16 @@
 package fr.fnegre.infrastructure.rss;
 
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class RssVdmConfiguration {
+
+    @Value("${vdm.rss.baseUrl}")
     private String baseUrl;
+
+    @Value("${vdm.rss.suffixPageParameter}")
     private String suffixPageParameter;
 
     public String getBaseUrl() {

@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features")
+//@RunWith(Cucumber.class)
+//@CucumberOptions(features = "src/test/resources/features")
 public class ReadingControllerTest {
 
 }

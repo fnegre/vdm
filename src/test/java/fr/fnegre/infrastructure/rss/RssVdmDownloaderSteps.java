@@ -1,23 +1,31 @@
 package fr.fnegre.infrastructure.rss;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.api.junit.Cucumber;
 import fr.fnegre.domain.model.downloading.Vdm;
+import fr.fnegre.domain.service.VdmDownloader;
 import org.assertj.core.api.Assertions;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest
 public class RssVdmDownloaderSteps {
-    private RssVdmDownloader downloader;
+    @Autowired
+    private VdmDownloader downloader;
     private List<Vdm> result;
 
     @Given("^the downloader exists$")
     public void theDownloaderExists() throws Throwable {
-        downloader = new RssVdmDownloader();
+        if (downloader == null) {
+            throw new Exception("RssVdmDownloader instance should not be null");
+        }
     }
 
     @When("^the client calls the downloader with (\\d+) as count argument$")
