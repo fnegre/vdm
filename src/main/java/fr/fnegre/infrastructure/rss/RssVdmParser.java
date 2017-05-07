@@ -9,31 +9,23 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Characters;
 import javax.xml.stream.events.XMLEvent;
-import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class RssVdmParser {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RssVdmParser.class);
-
     private static final String RSS_ENTRY = "entry";
     private static final String PUB_DATE = "published";
     private static final String AUTHOR = "author";
     private static final String CONTENT = "content";
 
-
     public List<Vdm> readFeed(InputStream in) {
         List<Vdm> vdms = new ArrayList<>();
         try {
-            boolean isFeedHeader = true;
             // Set header values intial to the empty string
             String content = "";
             String author = "";
@@ -43,7 +35,6 @@ public class RssVdmParser {
             // First create a new XMLInputFactory
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
             // Setup a new eventReader
-            //InputStream in = read();
             XMLEventReader eventReader = inputFactory.createXMLEventReader(in);
             // read the XML document
             while (eventReader.hasNext()) {
@@ -53,9 +44,6 @@ public class RssVdmParser {
                             .getLocalPart();
                     switch (localPart) {
                         case RSS_ENTRY:
-                            if (isFeedHeader) {
-                                isFeedHeader = false;
-                            }
                             event = eventReader.nextEvent();
                             break;
                         case CONTENT:
@@ -77,7 +65,6 @@ public class RssVdmParser {
                         vdmEntry.setPublishingDate(publishedDate);
                         vdms.add(vdmEntry);
                         event = eventReader.nextEvent();
-                        continue;
                     }
                 }
             }
@@ -86,7 +73,6 @@ public class RssVdmParser {
         }
         return vdms;
     }
-
 
     private String getCharacterDataOfChildTag(XMLEventReader eventReader)
             throws XMLStreamException {
@@ -98,12 +84,10 @@ public class RssVdmParser {
         String result = "";
         XMLEvent event = eventReader.nextEvent();
         if (event instanceof Characters) {
-            LOGGER.info("getCharacterData : char " + result);
             result = event.asCharacters().getData();
         }
         return result;
     }
-
 
     /**
      * Parse String of this pattern 2017-05-05T14:00:02+02:00

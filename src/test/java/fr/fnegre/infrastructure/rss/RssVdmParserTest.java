@@ -10,10 +10,11 @@ import java.io.InputStream;
 import java.util.List;
 
 public class RssVdmParserTest {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(RssVdmParserTest.class);
 
+    private RssVdmParser parser = new RssVdmParser();
 
-    RssVdmParser parser = new RssVdmParser();
     @Test
     public void readFeed() throws Exception {
         InputStream inputStream = readXmlFile("rss/vdm_rss_page_1.xml");
