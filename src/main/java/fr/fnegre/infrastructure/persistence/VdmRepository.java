@@ -1,4 +1,6 @@
 package fr.fnegre.infrastructure.persistence;
 
-public class VdmRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface VdmRepository extends CrudRepository<VdmEntity, Integer> {
 }
