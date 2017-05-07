@@ -7,8 +7,8 @@ import java.util.List;
 public interface VdmDownloader {
     /**
      * Download a fixed number of VDM
-     * @param count is the number of VDM to download
+     * @param vdmNumberToDownload is the number of VDM to download
      * @return the VDM downloaded or empty list
      */
-    List<Vdm> downloadVdm(int count);
+    List<Vdm> downloadVdm(int vdmNumberToDownload);
 }

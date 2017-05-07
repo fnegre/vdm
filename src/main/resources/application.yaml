@@ -2,5 +2,4 @@ server:
   port: 8081
 vdm:
   rss:
-    baseUrl: http://www.viedemerde.fr/rss
-    suffixPageParameter: ?page=
+    url: http://www.viedemerde.fr/rss?page

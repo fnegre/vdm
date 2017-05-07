@@ -23,8 +23,12 @@ public class RssVdmParser {
     private static final String AUTHOR = "author";
     private static final String CONTENT = "content";
 
-    public List<Vdm> readFeed(InputStream in) {
+    public List<Vdm> parseAllFeed(InputStream in) {
+        return parsePartialFeed(in, -1);
+    }
+    public List<Vdm> parsePartialFeed(InputStream in, int numberOfVdmToParse) {
         List<Vdm> vdms = new ArrayList<>();
+        int numberOfVdmAlreadyParsed = 0;
         try {
             // Set header values intial to the empty string
             String content = "";
@@ -37,7 +41,9 @@ public class RssVdmParser {
             // Setup a new eventReader
             XMLEventReader eventReader = inputFactory.createXMLEventReader(in);
             // read the XML document
-            while (eventReader.hasNext()) {
+            while (eventReader.hasNext()
+                    && (numberOfVdmAlreadyParsed < numberOfVdmToParse
+                    || numberOfVdmToParse == -1)) {
                 XMLEvent event = eventReader.nextEvent();
                 if (event.isStartElement()) {
                     String localPart = event.asStartElement().getName()
@@ -64,6 +70,7 @@ public class RssVdmParser {
                         vdmEntry.setContent(content);
                         vdmEntry.setPublishingDate(publishedDate);
                         vdms.add(vdmEntry);
+                        numberOfVdmAlreadyParsed++;
                         event = eventReader.nextEvent();
                     }
                 }
