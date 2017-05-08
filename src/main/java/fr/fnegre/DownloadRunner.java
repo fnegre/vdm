@@ -33,17 +33,17 @@ public class DownloadRunner implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        //List<Vdm> vdms = downloader.downloadVdm(10);
-        List<VdmEntity> vdmEntities =
+        List<Vdm> vdms = downloader.downloadVdm(10);
+        /*List<VdmEntity> vdmEntities =
                 IntStream.range(1, 30).boxed().map(i -> {
             VdmEntity entity = new VdmEntity();
             entity.setAuthor("Flo");
             entity.setContent("Test");
             entity.setPublishingDate(Timestamp.valueOf(LocalDateTime.now()));
             return entity;
-        }).collect(Collectors.toList());
+        }).collect(Collectors.toList());*/
 
-/*        vdms.add(new Vdm());
+        vdms.add(new Vdm());
                 LOGGER.info("download " + vdms);
         List<VdmEntity> vdmEntities = vdms.stream().map(vdm -> {
             VdmEntity entity = new VdmEntity();
@@ -51,10 +51,10 @@ public class DownloadRunner implements CommandLineRunner {
             entity.setContent(vdm.getContent());
             entity.setPublishingDate(Timestamp.valueOf(vdm.getPublishingDate()));
             return entity;
-        }).collect(Collectors.toList());*/
+        }).collect(Collectors.toList());
         LOGGER.info("Persistence des vdm");
         repository.save(vdmEntities);
         Iterable<VdmEntity> vdmsPersisted = repository.findAll();
-        LOGGER.info("from database : " + vdmsPersisted.toString());
+        LOGGER.debug("from database : " + vdmsPersisted.toString());
     }
 }
