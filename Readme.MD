@@ -1,9 +1,10 @@
 Projet VDM
 =========================
 # Lancement du projet 
-Pour lancer le projet, il est nécessaire d'avoir Maven 3 (testé avec 3.3.9).  
+Pour lancer le projet, il est nécessaire d'avoir Maven 3 (testé avec 3.3.9) et java 8.  
 Cloner le repository  
-Lancer la commande : `mvn spring-boot:run'
+Lancer la commande : `mvn spring-boot:run'  
+L'api Rest est disponible sur : http://localhost:8081/api/posts
 
 # Reste à faire
 Par manque de temps, il reste beaucoup à faire :
