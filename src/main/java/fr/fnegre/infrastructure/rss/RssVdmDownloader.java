@@ -38,7 +38,9 @@ public class RssVdmDownloader implements VdmDownloader{
             List<Vdm> lastVdmsDownloaded = parser.parsePartialFeed(inputStream,vdmNumberToDownload - vdms.size());
             vdms.addAll(lastVdmsDownloaded);
             LOGGER.info("" + vdms.size() + "/" + vdmNumberToDownload + "vdms downloaded");
+	    rssPageNumber++;
         }
+	LOGGER.debug("vdms = " + vdms);
         return vdms;
     }
 

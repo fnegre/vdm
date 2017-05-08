@@ -9,7 +9,7 @@
         </encoder>
     </appender>
 
-    <logger name="fr.fnegre" level="debug"
+    <logger name="fr.fnegre" level="info"
             additivity="false">
         <appender-ref ref="STDOUT" />
     </logger>

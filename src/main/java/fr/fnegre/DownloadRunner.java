@@ -33,7 +33,7 @@ public class DownloadRunner implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        List<Vdm> vdms = downloader.downloadVdm(10);
+        List<Vdm> vdms = downloader.downloadVdm(200);
         /*List<VdmEntity> vdmEntities =
                 IntStream.range(1, 30).boxed().map(i -> {
             VdmEntity entity = new VdmEntity();
@@ -43,8 +43,7 @@ public class DownloadRunner implements CommandLineRunner {
             return entity;
         }).collect(Collectors.toList());*/
 
-        vdms.add(new Vdm());
-                LOGGER.info("download " + vdms);
+                LOGGER.debug("download " + vdms);
         List<VdmEntity> vdmEntities = vdms.stream().map(vdm -> {
             VdmEntity entity = new VdmEntity();
             entity.setAuthor(vdm.getAuthor());

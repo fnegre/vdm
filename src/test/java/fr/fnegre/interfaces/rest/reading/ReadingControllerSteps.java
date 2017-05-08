@@ -17,9 +17,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
-//@RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration(classes = {VdmApplication.class})
+@Category(TestCategory.IntegrationTests.class)
 public class ReadingControllerSteps implements En {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ReadingControllerSteps.class);

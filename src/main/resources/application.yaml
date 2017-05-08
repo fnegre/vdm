@@ -5,4 +5,4 @@ spring:
     generate-ddl: true
 vdm:
   rss:
-    url: http://www.viedemerde.fr/rss?page
+    url: http://www.viedemerde.fr/rss?page=

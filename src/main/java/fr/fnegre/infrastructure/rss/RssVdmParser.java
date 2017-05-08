@@ -65,12 +65,15 @@ public class RssVdmParser {
                     }
                 } else if (event.isEndElement()) {
                     if (event.asEndElement().getName().getLocalPart() == (RSS_ENTRY)) {
-                        Vdm vdmEntry = new Vdm();
-                        vdmEntry.setAuthor(author);
-                        vdmEntry.setContent(content);
-                        vdmEntry.setPublishingDate(publishedDate);
-                        vdms.add(vdmEntry);
-                        numberOfVdmAlreadyParsed++;
+			if(author != null && content != null && publishedDate != null) {
+	                        Vdm vdmEntry = new Vdm();
+        	                vdmEntry.setAuthor(author);
+                	        vdmEntry.setContent(content);
+                        	vdmEntry.setPublishingDate(publishedDate);
+                       	 	vdms.add(vdmEntry);
+                        	numberOfVdmAlreadyParsed++;
+				LOGGER.debug ("Parse VDM " + vdmEntry); 
+			}
                         event = eventReader.nextEvent();
                     }
                 }
@@ -92,6 +95,9 @@ public class RssVdmParser {
         XMLEvent event = eventReader.nextEvent();
         if (event instanceof Characters) {
             result = event.asCharacters().getData();
+	   if (result.equals("null")) {	
+		return null;	
+	  }
         }
         return result;
     }
@@ -102,6 +108,7 @@ public class RssVdmParser {
      * @return LocalDate
      */
     private static LocalDateTime parseRssDate(String dateString) {
+	if (dateString == null) return null;
         DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
         return LocalDateTime.parse(dateString, formatter);
     }

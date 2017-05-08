@@ -16,7 +16,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@ContextConfiguration(classes = {VdmApplication.class})
 @Category(TestCategory.IntegrationTests.class)
 public class RssVdmDownloaderSteps {
     private VdmDownloader downloader = buildDownloader();

@@ -8,8 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -24,10 +27,11 @@ public class ReadingController {
     @RequestMapping(value = "/api/posts", method = RequestMethod.GET)
     public PostsView posts(@RequestParam(value="from", required = false) String fromStr,
                            @RequestParam(value="to", required = false) String toStr,
-                           @RequestParam(value="author", required = false) String author) {
+                           @RequestParam(value="author", required = false) String author) throws ParseException {
         LOGGER.info("Call to api/posts received");
-        LocalDate from = (fromStr != null) ? LocalDate.parse(fromStr) : null;
-        LocalDate to = (toStr != null) ? LocalDate.parse(toStr) : null;
+        DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        Date from = (fromStr != null) ? formatter.parse(fromStr) : null;
+        Date to = (toStr != null) ? formatter.parse(toStr) : null;
 
         Iterable<VdmEntity> entities = new ArrayList<>();
         if (from == null && to == null && author == null) {
@@ -35,15 +39,15 @@ public class ReadingController {
         } else if (from == null && to == null && author != null){
             entities = repository.findByAuthor(author);
         } else if (from == null && to != null && author == null) {
-            entities = repository.findByPublishingDateBetween(LocalDate.of(1970,1,1), to);
+            entities = repository.findByPublishingDateBetween(new Date(), to);
         } else if (from != null && to == null && author == null) {
-            entities = repository.findByPublishingDateBetween(from, LocalDate.now());
+            entities = repository.findByPublishingDateBetween(from, new Date());
         } else if (from != null && to != null && author == null) {
             entities = repository.findByPublishingDateBetween(from, to);
         } else {
             entities = repository.findByAuthorAndPublishingDateBetween(author,
-                    (from == null) ? LocalDate.of(1970,1,1) : from,
-                    (to == null) ? LocalDate.now() : to);
+                    (from == null) ? new Date() : from,
+                    (to == null) ? new Date() : to);
         }
         PostsView result = new PostsView();
         result.setPosts(StreamSupport.stream(entities.spliterator(), false)

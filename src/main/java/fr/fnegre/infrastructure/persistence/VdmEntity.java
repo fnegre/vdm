@@ -13,6 +13,7 @@ public class VdmEntity {
 
     private String author;
     private Timestamp publishingDate;
+	@Column(length=1000)
     private String content;
 
 
