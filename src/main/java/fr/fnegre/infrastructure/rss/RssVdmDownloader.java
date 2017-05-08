@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -53,7 +54,9 @@ public class RssVdmDownloader implements VdmDownloader{
 
     private InputStream read(URL url) {
         try {
-            return url.openStream();
+            HttpURLConnection httpcon = (HttpURLConnection) url.openConnection();
+            httpcon.addRequestProperty("User-Agent", "Test/0.1");
+            return httpcon.getInputStream();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
