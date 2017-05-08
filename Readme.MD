@@ -1,8 +1,8 @@
 Projet VDM
 =========================
 # Lancement du projet 
-Pour lancer le projet, il est nécessaire d'avoir Maven 3 (testé avec 3.3.9).
-Cloner le repository
+Pour lancer le projet, il est nécessaire d'avoir Maven 3 (testé avec 3.3.9).  
+Cloner le repository  
 Lancer la commande : `mvn spring-boot:run'
 
 # Reste à faire
