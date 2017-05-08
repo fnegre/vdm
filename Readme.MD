@@ -1,5 +1,17 @@
 Projet VDM
 =========================
+# Lancement du projet 
+Pour lancer le projet, il est nécessaire d'avoir Maven 3 (testé avec 3.3.9).
+Cloner le repository
+Lancer la commande : `mvn spring-boot:run'
+
+# Reste à faire
+Par manque de temps, il reste beaucoup à faire :
+- Ajout de tests (unitaires et intégration)
+- Paramétrage de l'application (le nombre de vdm à télécharger est écrit en dur par exemple)
+- La gestion des erreurs (peu de test sur les cas extrêmes, sur les valeurs des paramètres de l'url dans l'API, etc.)
+- Nettoyage du code (refactoring du code dans certains cas serait le bienvenu (comme le filtrage de l'API rest), les dernières corrections ont été faites sans iDE : pb d'indentation à certains endroits)
+
 
 # Fonctionnalites
 
